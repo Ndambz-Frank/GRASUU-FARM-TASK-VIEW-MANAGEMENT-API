@@ -11,3 +11,4 @@ Route::get('/tasks/report', [TaskController::class, 'report'])->name('api.tasks.
 Route::post('/task', [TaskController::class, 'store'])->name('api.task.store');
 Route::patch('/task/{task}/status', [TaskController::class, 'updateStatus'])->name('api.task.updateStatus');
 Route::delete('/task/{task}', [TaskController::class, 'destroy'])->name('api.task.destroy');
+Route::put('/task/{task}', [TaskController::class, 'update'])->name('api.task.update');
